@@ -1,27 +1,20 @@
 from behave import *
 
-@given('the to-do Dictionary contains tasks to sort')
+@given('the to-do Dictionary contains tasks in complete and incomplete key')
 def step_impl(context):
-    global tasksList
+    global dictionary
 
-    tasksList = {
+    context.dictionary = {
         "Completed" : ['Pay bills','Finish code'],
         "Incompleted" : ['Buy groceries','Take a walk']
     }
 
-@when('the user sort the to-do Dictionary by completed criteria')
+@when('the user sort the to-do Dictionary by complete criteria')
 def step_impl(context):
-    global tasksList
-    tasksList = {
-        
-    } 
-    context.list=orderList(tasksList)
+    global criteria
+    context.criteria="complete"
 
-@then('the output should contain the list sorted:')
+@then('the output should contain the list inside the key complete')
 def step_impl(context):
-    global tasksList
-    tasksList = {
-        "Completed" : ['Pay bills','Finish code'],
-        "Incompleted" : ['Buy groceries','Take a walk']
-    }
+    #print(context.dictionary["complete"])
     print("1. Pay bills\n2. Finish code")
