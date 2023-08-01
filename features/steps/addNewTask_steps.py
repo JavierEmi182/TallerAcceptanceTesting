@@ -15,6 +15,7 @@ def step_impl(context):
 def step_impl(context,task):
     global tasksList
     tasksList["Incompleted"]=task
+    #context.list=addTask(tasksList)
 
 @then('the to-do  Diccionary should contain "{task}"')
 def step_impl(context,task):
