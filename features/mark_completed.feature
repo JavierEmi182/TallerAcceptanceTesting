@@ -7,6 +7,4 @@ Feature: Mark task as completed
         |              |  Buy groceries |
 
         When the user mark task "Buy groceries" as completed
-        Then the to_do Dictionary should show task "Buy groceries" as completed:
-        |    Complete    |   Incomplete   |
-        |  Buy groceries |                |
+        Then a message will be displayed mentioning that the task Buy groceries was marked as complete

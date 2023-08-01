@@ -1,6 +1,6 @@
 from behave import *
 
-@given('the to-do Dictionary contains tasks')
+@given('the to-do Dictionary contains tasks to list')
 def step_impl(context):
 
     global tasksList
@@ -20,7 +20,7 @@ def step_impl(context):
     
     context.list=listTasks(tasksList)
 
-@then('the output should contain:')
+@then('the output should contain the entire Dictionary:')
 def step_impl(context):
     global tasksList
     tasksList = {

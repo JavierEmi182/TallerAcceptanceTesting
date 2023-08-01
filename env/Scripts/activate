@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\jevel\OneDrive\Desktop\ing soft\Talleres\AcceptanceTesting\env"
+VIRTUAL_ENV="C:\Users\Usuario\Desktop\TallerAcceptanceTesting\TallerAcceptanceTesting\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

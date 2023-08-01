@@ -7,6 +7,4 @@ Feature: Sorting the tasklist according to some criteria
         |   Pay bills    | Buy groceries |
         |   Finish code  |  Take a walk  |
         When the user sort the to-do Dictionary by completed criteria
-        Then the output should contain:
-        1. Pay bills
-        2. Finish code
+        Then the output should contain the list inside the key Complete

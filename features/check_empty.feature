@@ -7,5 +7,4 @@ Feature: Checks if the to-do Dictionary is empty
         |              |                |
 
         When the user checks if tasklist is empty
-        Then output should be :
-        List is empty.
+        Then output should be that the list is empty

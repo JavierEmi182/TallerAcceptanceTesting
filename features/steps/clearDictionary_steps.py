@@ -1,6 +1,6 @@
 from behave import *
 
-@given('the to-do Dictionary contains tasks')
+@given('the to-do Dictionary contains tasks to clear')
 def step_impl(context):
     #set the to-do list as an empty list
     global tasksList

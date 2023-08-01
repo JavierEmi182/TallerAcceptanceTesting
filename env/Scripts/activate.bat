@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\jevel\OneDrive\Desktop\ing soft\Talleres\AcceptanceTesting\env
+set VIRTUAL_ENV=C:\Users\Usuario\Desktop\TallerAcceptanceTesting\TallerAcceptanceTesting\env
 
 if not defined PROMPT set PROMPT=$P$G
 

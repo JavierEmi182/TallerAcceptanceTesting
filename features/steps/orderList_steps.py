@@ -1,6 +1,6 @@
 from behave import *
 
-@given('the to-do Dictionary contains tasks:')
+@given('the to-do Dictionary contains tasks to sort')
 def step_impl(context):
     global tasksList
 
@@ -17,7 +17,7 @@ def step_impl(context):
     } 
     context.list=orderList(tasksList)
 
-@then('the output should contain:')
+@then('the output should contain the list sorted:')
 def step_impl(context):
     global tasksList
     tasksList = {
